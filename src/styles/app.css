@@ -7,11 +7,12 @@ html, body, #root {
 .app-shell {
   min-height: 100vh;
   position: relative;
-  background-image: url('https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1920&q=80');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: linear-gradient(
+    135deg,
+    #1e3a5f 0%,
+    #2563eb 50%,
+    #60a5fa 100%
+  );
 }
 
 .app-shell::before {
@@ -23,9 +24,9 @@ html, body, #root {
   bottom: 0;
   background: linear-gradient(
     to bottom,
-    rgba(30, 20, 15, 0.75) 0%,
-    rgba(50, 35, 25, 0.7) 50%,
-    rgba(30, 20, 15, 0.8) 100%
+    rgba(15, 23, 42, 0.5) 0%,
+    rgba(30, 41, 59, 0.45) 50%,
+    rgba(15, 23, 42, 0.55) 100%
   );
   z-index: 0;
 }
@@ -37,11 +38,11 @@ html, body, #root {
 }
 
 .login-card {
-  border: 0 !important;
-  background-color: rgba(255, 255, 255, 0.85) !important;
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  background-color: rgba(255, 255, 255, 0.88) !important;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35) !important;
 }
 
 /* Fallback for browsers that don't support backdrop-filter */
@@ -58,17 +59,17 @@ html, body, #root {
 
 .welcome-text {
   color: white;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
 }
 
 .welcome-btn {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #3d2618 !important;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #1e3a8a !important;
   border: none;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 .welcome-btn:hover {
   background-color: white;
-  color: #3d2618 !important;
+  color: #1e3a8a !important;
 }
