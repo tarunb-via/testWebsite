@@ -110,6 +110,21 @@ function LoginPage() {
           </Form>
         </Card.Body>
       </Card>
+      </div>
+    </Container>
+  );
+}
+
+export default LoginPage;              />
+                  Logging in...
+                </>
+              ) : (
+                'Log in'
+              )}
+            </Button>
+          </Form>
+        </Card.Body>
+      </Card>
     </Container>
   );
 }
