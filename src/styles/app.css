@@ -1,0 +1,74 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-shell {
+  min-height: 100vh;
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.app-shell::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 20, 15, 0.75) 0%,
+    rgba(50, 35, 25, 0.7) 50%,
+    rgba(30, 20, 15, 0.8) 100%
+  );
+  z-index: 0;
+}
+
+.app-overlay {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+.login-card {
+  border: 0 !important;
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Fallback for browsers that don't support backdrop-filter */
+@supports not (backdrop-filter: blur(6px)) {
+  .login-card {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+  }
+}
+
+.welcome-container {
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-text {
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-btn {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #3d2618 !important;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-btn:hover {
+  background-color: white;
+  color: #3d2618 !important;
+}

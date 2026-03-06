@@ -53,8 +53,8 @@ function LoginPage() {
   };
 
   return (
-    <Container className="py-5 d-flex justify-content-center">
-      <Card className="w-100" style={{ maxWidth: '400px' }}>
+    <Container className="min-vh-100 d-flex justify-content-center align-items-center py-4 py-md-5 px-3">
+      <Card className="login-card w-100 mx-auto" style={{ maxWidth: '400px' }}>
         <Card.Body className="p-4">
           <h2 className="text-center mb-4">Pottery Class Login</h2>
           
