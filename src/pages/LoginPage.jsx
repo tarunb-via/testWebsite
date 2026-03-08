@@ -91,7 +91,7 @@ function LoginPage() {
               </Form.Group>
 
               <Button
-                variant="primary"
+                variant="success"
                 type="submit"
                 className="w-100 py-2"
                 disabled={loading}
