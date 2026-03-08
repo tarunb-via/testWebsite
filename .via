@@ -5,6 +5,6 @@
     "bundler": "vite",
     "styling": "bootstrap",
     "backend": "express",
-    "database": "sqlite"
+    "database": "postgres"
   }
 }
