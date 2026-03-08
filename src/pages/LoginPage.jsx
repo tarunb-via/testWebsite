@@ -56,7 +56,7 @@ function LoginPage() {
     <Container className="min-vh-100 d-flex justify-content-center align-items-center py-4 py-md-5 px-3">
       <div className="w-100" style={{ maxWidth: '400px' }}>
         <div className="text-center text-white mb-3 mb-md-4 px-2 login-hero">
-          <h1 className="login-hero-title m-0">Hi, how are you?</h1>
+          <h1 className="login-hero-title m-0">Welcome to my website.</h1>
           <p className="login-hero-subtitle mt-2 mb-0">Sign in to continue</p>
         </div>
         <Card className="login-card w-100 mx-auto">
