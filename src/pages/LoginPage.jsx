@@ -61,7 +61,7 @@ function LoginPage() {
         </div>
         <Card className="login-card w-100 mx-auto">
           <Card.Body className="p-4">
-            <h2 className="text-center mb-4">Pottery Class Login</h2>
+            <h2 className="text-center mb-4">Login for More Pottery.</h2>
 
             {error && <Alert variant="danger">{error}</Alert>}
 
